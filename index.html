@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/58129bf30a.js" crossorigin="anonymous"></script>
+
+<title>Fitness</title>
+
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Trebuchet MS' rel='stylesheet'>
+
+<style type="text/css">  
+    *{
+margin:0;
+}
+
+h1 {
+  color: white;
+  font-family: allerta stencil;
+  font-size: 400%;
+}
+h2 {
+  color: white;
+  font-family: allerta stencil;
+  font-size: 200%;
+}
+h3 { 
+  color: white;
+  font-family: barlow;
+  font-size: 150%
+}
+h4  {
+  color: white;
+  font-family: barlow;
+  font-size: 120%;
+}
+h5  {
+  color: white;
+  font-family: barlow;
+  font-size: 115%;
+}
+p  {
+  color: white;
+  font-family: barlow;
+  font-size: 100%;
+}
+
+ul  {
+  color: white;
+  font-family: barlow;
+  font-size: 100%;
+}
+
+
+.flex-container-nav {
+  display: flex;
+  justify-content: center;
+  background-color: maroon;
+}
+
+.flex-container-nav > div {
+  background-color: firebrick;
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.flex-container-overview {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.flex-container-overview > div {
+  background-color: black;
+  margin: 15px;
+  padding: 20px;
+}
+
+
+.flex-container-direction {
+  display: flex;
+  justify-content: center;
+  background-color: maroon;
+}
+
+.flex-container-direction > div {
+  background-color: black;
+  margin: 15px;
+  padding: 20px;
+}
+
+
+.flex-container-foot {
+  display: flex;
+  justify-content: center;
+  background-image: url('hbkgrnd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.flex-container-foot > div {
+  background-color: black;
+  margin: 15px;
+  padding: 20px;
+}
+
+.button {
+  background-color: firebrick;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 16px;
+  font-family: barlow;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.button:hover {
+  background-color: firebrick;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white
+}
+
+a:hover {
+  color: silver;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
+header {
+  background-image: url('hbkgrnd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+section {
+  background-color:black;
+  margin: 0px;
+}
+
+article {
+  background-image: url('hbkgrnd.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+
+* {box-sizing: border-box}
+body {font-family: barlow; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<header style="padding-top:20px;padding-bottom:5px;padding-left:40px">
+<h1><a href="index.html"> Fitness First </h1>
+<h2> BUGIS </h2></a>
+</header>
+
+<nav>
+<div class="flex-container-nav">
+  <div>
+<h4><a href="page2.html"> classes & timetable </a></h4>
+  </div>
+
+  <div>
+<h4><a href="page3.html"> facilities & amenities </a></h4>
+  </div>
+
+  <div>
+<h4><a href="page4.html"> subscription & membership </a></h4>
+  </div>
+
+  <div>
+<h4><a href="page5.html"> contact us & getting here </a></h4>
+  </div>
+
+</nav>
+
+
+<section style="margin:0" class="flex-container-overview">
+  <div>
+<h4 style="padding:8px"> Fitness First Bugis </h4>
+<p>Located in the bustling shopping mall in Singapore's Central Business district, Fitness First Bugis calls Bugis Junction its home. Amongst some of your favourite boutiques and brands, Fitness First brings excerise and keeping an active lifestyle easier and more accessible. With emphasis on convenience and quality, FF Bugis provides members with access to quality equipment, opulent amenities and well-trained trainers, to equip them with the best experience. FF Bugis even has a steam room for members to recover after a workout.
+<br> 
+<br>
+On a 15,995 square feet plot, with 5 meters high ceiling, FF Bugis is the prime workout location, suited for both autonomous training or workouts tailored to your needs by a personal trainer. With 7 workout zones, and the largest Group Exercise studio, FF members enjoy the privilage engaging in almost any form of strength and condition exercises they wish. Some examples would be Animal flow and HIIT exercises. Moreover, FF Bugis offers Zumba and yoga classes, to offer a more dynamic workout from the traditional weights training. 
+<br> 
+<br>
+Fitness First Bugis is an accessible location - located above Bugis MRT and along streets with several bus services. Bugis Junction is not only connected by the East-West and Downtown MRT lines, but also convenient from several busstops along Victoria Street and North Bridge Road.
+<br> 
+<br>
+Come down to FF Bugis for a quick workout and pamper!
+</p>
+  </div>
+  <div>
+<br>
+<img src="ffbugis.jpg" alt="bugis" width="550" height="375" align="right" style="padding-bottom:10px">
+<br>
+<br>
+<h5 style="padding:8px"> STUDIOS </h4>
+<ul>
+  <li>Group Exercise Studio</li>
+  <li>Main Freestyle Area</li>
+  <li>Freestyle Area 1</li>
+</ul> 
+  </div>
+</section>
+
+
+
+
+
+<article style="padding:20px">
+<h3 style="padding:15px"><center> SNEAK PEEK AT FF BUGIS </center></h3>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="frontdesk.jpg" style="width:100%">
+  <div class="text">frontdesk</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="weights.jpg" style="width:100%">
+  <div class="text">weights area</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="lounge.jpg" style="width:100%">
+  <div class="text">lounge area</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="locker.jpg" style="width:100%">
+  <div class="text">lockers</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="groupexercisestudio.jpg" style="width:100%">
+  <div class="text">group exercise studio</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="cardio.jpg" style="width:100%">
+  <div class="text">cardio training area</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="freestyle.jpg" style="width:100%">
+  <div class="text">freestyle area</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="cycling.jpg" style="width:100%">
+  <div class="text">cycling zone</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</article>
+
+
+
+
+
+
+<div style="margin:0" class="flex-container-direction">
+  <div>
+<img src="map.jpg" alt="map" width="390" height="295" align="middle">
+  </div>
+
+  <div> 
+<h5 style="margin:0">ADDRESS</h5>
+<p style="margin-top:0">200 Victoria Street.
+<br>#04-02, BUGIS JUNCTION,
+<br>Singapore 188021</p>
+
+<form action="https://goo.gl/maps/oQduKWkJxU7VXopLA" target="_blank">
+  <button class="button">google maps</button>
+
+<h5 style="margin:0">PHONE NUMBER</h5>
+<p style="margin-top:0">+65 63279167</p>
+<br>
+
+<h5 style="margin:0;">OPENING HOURS</h5>
+<p style="margin-top:0"> (mon-fri)
+<br> 6.00am-10.00pm
+<br> (sat, sun, PH)
+<br> 8.00am-10.00pm</p>
+ </div>
+</div>
+
+
+
+
+
+
+<footer>
+<div class="flex-container-foot">
+  <div>
+<h3> first timer </h3>
+<p><a href="https://www.fitnessfirst.com.sg/clubs" target="_blank"> find a club </a></p>
+<p><a href="page5.html"> contact us </a></p>
+<p><a href="https://www.fitnessfirst.com.sg/faqs" target="_blank"> FAQ </a></p>
+  </div>
+
+  <div>
+<h3> membership </h3>
+<p><a href="page4.html"> subscription </a></p>
+<p><a href="page3.html"> perks </a></p>
+  </div>
+
+  <div>
+<h3> clubs & classes </h3>
+<p><a href="https://www.fitnessfirst.com.sg/clubs" target="_blank"> find a club </a></p>
+<p><a href="page2.html"> timetable & classes </a></p>
+<p><a href="https://www.fitnessfirst.com.sg/highlights"> highlights </a></p>
+  </div>
+
+  <div>
+<h3 style="padding:8px"> FF socials </h3>
+<a href="https://www.facebook.com/FitnessFirstSingapore/" target="_blank">
+  <i class="fab fa-facebook" style="font-size:38px;color:white"></i>
+</a>
+
+<a href="https://www.instagram.com/fitnessfirstsg/" target="_blank">
+  <i class="fab fa-instagram" style="font-size:38px;color:white"></i>
+</a>
+
+<a href="https://www.youtube.com/channel/UCMNOPKcjL7pqvxEgrFAWZcQ" target="_blank">
+  <i class="fab fa-youtube" style="font-size:38px;color:white"></i>
+</a>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
